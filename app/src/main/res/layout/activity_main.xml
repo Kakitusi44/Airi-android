@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#1A1A2E">
+
+    <TextView
+        android:id="@+id/tvAssistantName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Айри"
+        android:textSize="52sp"
+        android:textColor="#E94560"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Голосовой ИИ-ассистент"
+        android:textSize="16sp"
+        android:textColor="#AAAAAA"
+        android:layout_marginBottom="32dp" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#CCCCCC"
+        android:gravity="center"
+        android:layout_marginBottom="32dp" />
+
+    <Button
+        android:id="@+id/btnSettings"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="Настройки"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnLaunch"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="Запустить"
+        android:backgroundTint="#E94560"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

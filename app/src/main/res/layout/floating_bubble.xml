@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout android:id="@+id/bubble"
+        android:layout_width="60dp" android:layout_height="60dp"
+        android:background="@drawable/circle_bg" android:elevation="8dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_gravity="center" android:text="AI"
+            android:textColor="@android:color/white" android:textSize="18sp" android:textStyle="bold" />
+    </FrameLayout>
+
+    <LinearLayout android:id="@+id/layoutPanel"
+        android:layout_width="280dp" android:layout_height="wrap_content"
+        android:orientation="vertical" android:background="#EE1A1A2E"
+        android:padding="12dp" android:elevation="8dp" android:layout_marginTop="4dp">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical">
+
+            <TextView android:id="@+id/tvName"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="Айри"
+                android:textColor="#E94560" android:textSize="16sp" android:textStyle="bold" />
+
+            <ImageButton android:id="@+id/btnClear"
+                android:layout_width="32dp" android:layout_height="32dp"
+                android:src="@android:drawable/ic_menu_delete"
+                android:background="@null" android:tint="#AAAAAA" />
+
+            <ImageButton android:id="@+id/btnCollapse"
+                android:layout_width="32dp" android:layout_height="32dp"
+                android:src="@android:drawable/arrow_up_float"
+                android:background="@null" android:tint="#AAAAAA" />
+
+            <ImageButton android:id="@+id/btnClose"
+                android:layout_width="32dp" android:layout_height="32dp"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"
+                android:background="@null" android:tint="#AAAAAA" />
+        </LinearLayout>
+
+        <TextView android:id="@+id/tvStatus"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Нажмите микрофон" android:textColor="#AAAAAA"
+            android:textSize="12sp" android:layout_marginTop="8dp" />
+
+        <TextView android:id="@+id/tvResponse"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="" android:textColor="#FFFFFF"
+            android:textSize="13sp" android:layout_marginTop="8dp" android:maxLines="6" />
+
+        <ImageButton android:id="@+id/btnMic"
+            android:layout_width="60dp" android:layout_height="60dp"
+            android:layout_gravity="center_horizontal" android:layout_marginTop="12dp"
+            android:src="@android:drawable/ic_btn_speak_now"
+            android:background="@drawable/circle_bg"
+            android:tint="@android:color/white" android:padding="12dp" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A1A2E">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="API Ключ OpenRouter" android:textColor="#E94560"
+            android:textSize="12sp" android:layout_marginBottom="4dp" />
+        <EditText android:id="@+id/etApiKey" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="sk-or-v1-..."
+            android:inputType="textPassword" android:textColor="#FFFFFF"
+            android:textColorHint="#555555" android:layout_marginBottom="20dp" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Имя персонажа" android:textColor="#E94560"
+            android:textSize="12sp" android:layout_marginBottom="4dp" />
+        <EditText android:id="@+id/etPersonaName" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Айри"
+            android:textColor="#FFFFFF" android:textColorHint="#555555"
+            android:layout_marginBottom="20dp" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Характер / системный промпт" android:textColor="#E94560"
+            android:textSize="12sp" android:layout_marginBottom="4dp" />
+        <EditText android:id="@+id/etPersonaDesc" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Ты умная и добрая ассистентка..."
+            android:inputType="textMultiLine" android:minLines="4"
+            android:textColor="#FFFFFF" android:textColorHint="#555555"
+            android:layout_marginBottom="20dp" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Модель OpenRouter" android:textColor="#E94560"
+            android:textSize="12sp" android:layout_marginBottom="4dp" />
+        <EditText android:id="@+id/etModel" android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="meta-llama/llama-3.2-11b-vision-instruct:free"
+            android:textColor="#FFFFFF" android:textColorHint="#555555"
+            android:layout_marginBottom="32dp" />
+
+        <Button android:id="@+id/btnSave" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:text="Сохранить"
+            android:backgroundTint="#E94560" android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</ScrollView>
